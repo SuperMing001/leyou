@@ -1,4 +1,4 @@
-package com.leyou.web;
+package com.leyou.item.web;
 
 import com.leyou.common.enums.ExceptionEnum;
 import com.leyou.common.exception.LyExcetion;
