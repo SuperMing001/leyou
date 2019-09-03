@@ -4,11 +4,11 @@ spring:
   application:
     name: item-service
   datasource:
-#    url: jdbc:mysql://192.168.10.101:3306/heima
-    url: jdbc:mysql://192.168.26.130:3306/heima
+    url: jdbc:mysql://192.168.10.101:3306/heima
+#    url: jdbc:mysql://192.168.26.130:3306/heima
     username: root
-#    password: root
-    password: 123456
+    password: root
+#    password: 123456
     hikari:
       maximum-pool-size: 30
       minimum-idle: 10
@@ -22,3 +22,6 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
